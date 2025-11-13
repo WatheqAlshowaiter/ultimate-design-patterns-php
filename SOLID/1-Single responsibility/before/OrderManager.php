@@ -2,13 +2,23 @@
 
 namespace SingleResponsibility\Before;
 
-class OrderManager {
+use Exception;
+use SingleResponsibility\Shared\Customer;
+use SingleResponsibility\Shared\Order;
+use SingleResponsibility\Shared\Payment;
 
-    public function processOrder(Order $order) {
+class OrderManager
+{
+    public function processOrder(Order $order): void
+    {
         echo "Processing order: {$order->getName()} now...\n";
     }
 
-    public function processPayment(Order $order, Payment $payment) {
+    /**
+     * @throws Exception
+     */
+    public function processPayment(Order $order, Payment $payment): void
+    {
         echo "Processing payment of order {$order->getName()}\n";
         echo "Issuing payment for amount {$order->getPrice()}\n";
 
@@ -27,7 +37,8 @@ class OrderManager {
         }
     }
 
-    public function sendEmailNotification(Customer $customer, string $message) {
+    public function sendEmailNotification(Customer $customer, string $message): void
+    {
         echo "Sending email notification to: {$customer->getEmail()} with message: $message\n";
     }
 }

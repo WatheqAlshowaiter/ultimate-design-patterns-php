@@ -2,6 +2,9 @@
 
 namespace OpenClosed\After;
 
+use OpenClosed\After\Contracts\PaymentStrategy;
+use OpenClosed\Shared\Order;
+
 class PaymentProcessor
 {
     public function __construct(

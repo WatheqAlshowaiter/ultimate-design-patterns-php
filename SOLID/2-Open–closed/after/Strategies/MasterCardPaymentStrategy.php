@@ -1,10 +1,11 @@
 <?php
 
-namespace OpenClosed\After;
+namespace OpenClosed\After\Strategies;
 
+use OpenClosed\After\Contracts\PaymentStrategy;
 use Override;
 
-class MasterCartPaymentStrategy implements PaymentStrategy
+class MasterCardPaymentStrategy implements PaymentStrategy
 {
     #[Override]
      public function processPayment(float $amount): void

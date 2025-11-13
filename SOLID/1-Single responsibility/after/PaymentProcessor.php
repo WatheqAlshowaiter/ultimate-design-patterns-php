@@ -2,9 +2,16 @@
 
 namespace SingleResponsibility\After;
 
+use Exception;
+use SingleResponsibility\Shared\Order;
+use SingleResponsibility\Shared\Payment;
+
 class PaymentProcessor
 {
-    public function processPayment(Order $order, Payment $payment)
+    /**
+     * @throws Exception
+     */
+    public function processPayment(Order $order, Payment $payment): void
     {
         echo "Processing payment of order {$order->getName()}\n";
         echo "Issuing payment for amount {$order->getPrice()}\n";

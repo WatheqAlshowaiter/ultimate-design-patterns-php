@@ -1,13 +1,13 @@
 <?php
 
 namespace SingleResponsibility\After;
-use Solid\HelperClasses\Customer;
-use Solid\HelperClasses\Payment;
-use Solid\HelperClasses\Order;
+
+
+use SingleResponsibility\Shared\Order;
 
 class OrderManagement
 {
-    public function processOrder(Order $order)
+    public function processOrder(Order $order): void
     {
         echo "Processing order: {$order->getName()} now...\n";
     }

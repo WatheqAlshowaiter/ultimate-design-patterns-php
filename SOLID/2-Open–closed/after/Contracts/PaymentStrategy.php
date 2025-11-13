@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenClosed\After;
+namespace OpenClosed\After\Contracts;
 
 interface PaymentStrategy
 {

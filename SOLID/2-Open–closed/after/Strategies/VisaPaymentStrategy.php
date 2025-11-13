@@ -1,7 +1,8 @@
 <?php
 
-namespace OpenClosed\After;
+namespace OpenClosed\After\Strategies;
 
+use OpenClosed\After\Contracts\PaymentStrategy;
 use Override;
 
 class VisaPaymentStrategy implements PaymentStrategy

@@ -2,9 +2,17 @@
 
 namespace OpenClosed\Before;
 
+use Exception;
+use OpenClosed\Shared\Order;
+use OpenClosed\Shared\Payment;
+
 class PaymentProcessor {
 
-    public function processPayment(Order $order, Payment $payment) {
+    /**
+     * @throws Exception
+     */
+    public function processPayment(Order $order, Payment $payment): void
+    {
         echo "Processing payment of order {$order->getName()}\n";
         echo "Issuing payment for amount {$order->getPrice()}\n";
 
