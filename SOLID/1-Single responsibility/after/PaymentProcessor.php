@@ -1,10 +1,6 @@
 <?php
 
-namespace after;
-
-use Solid\HelperClasses\Customer;
-use Solid\HelperClasses\Payment;
-use Solid\HelperClasses\Order;
+namespace SingleResponsibility\After;
 
 class PaymentProcessor
 {

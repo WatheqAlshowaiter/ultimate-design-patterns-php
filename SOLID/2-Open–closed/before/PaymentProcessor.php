@@ -1,12 +1,8 @@
 <?php
 
-namespace SingleResponsibility\Before;
+namespace OpenClosed\Before;
 
-class OrderManager {
-
-    public function processOrder(Order $order) {
-        echo "Processing order: {$order->getName()} now...\n";
-    }
+class PaymentProcessor {
 
     public function processPayment(Order $order, Payment $payment) {
         echo "Processing payment of order {$order->getName()}\n";
@@ -25,9 +21,5 @@ class OrderManager {
             default:
                 throw new Exception("Unsupported payment type: {$payment->getType()}\n");
         }
-    }
-
-    public function sendEmailNotification(Customer $customer, string $message) {
-        echo "Sending email notification to: {$customer->getEmail()} with message: $message\n";
     }
 }

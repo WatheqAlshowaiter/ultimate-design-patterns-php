@@ -1,7 +1,6 @@
 <?php
 
-namespace after;
-
+namespace SingleResponsibility\After;
 use Solid\HelperClasses\Customer;
 use Solid\HelperClasses\Payment;
 use Solid\HelperClasses\Order;
