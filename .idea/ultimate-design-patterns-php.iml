@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/SOLID/1-Single responsibility" isTestSource="false" packagePrefix="SingleResponsibility" />
+      <sourceFolder url="file://$MODULE_DIR$/SOLID/2-Open–closed" isTestSource="false" packagePrefix="OpenClosed" />
+      <sourceFolder url="file://$MODULE_DIR$/SOLID/3-Liskov substitution" isTestSource="false" packagePrefix="LiskovSubstitution" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

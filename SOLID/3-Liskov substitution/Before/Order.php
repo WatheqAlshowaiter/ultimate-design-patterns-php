@@ -12,4 +12,9 @@ class Order
     {
         return $this->name;
     }
+
+    public function getTotalPrice(): float
+    {
+        return $this->price + self::SHIPPING_COST;
+    }
 }
